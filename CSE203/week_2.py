@@ -38,8 +38,8 @@ else:print("No")
 """
 
 # Clock Math
-H, M = map(int, input().split())
 """
+H, M = map(int, input().split())
 angle = abs((30 * H - (11 / 2) * M))
 if angle > 180:
     angle = 360 - angle
@@ -67,3 +67,13 @@ if has_carry:
 else:print("No")
 """
 
+# Little Subarray Sum
+"""
+n, a, b = map(int, input().split())
+lst = list(map(int, input().split()))
+
+s = 0
+for i in range(a, b+1):
+    s += lst[i]
+print(s)
+"""
