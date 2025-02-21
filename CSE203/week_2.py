@@ -6,6 +6,7 @@ done = a + b + c
 d = x - done
 print(d)
 """
+from math import trunc
 
 # Mixed Fractions
 """
@@ -45,3 +46,24 @@ if angle > 180:
 
 print(f"{angle:.7f}")
 """
+
+# Byang's Additions
+"""
+a = int(input())
+b = int(input())
+carry = 0
+has_carry = False
+while a > 0 or b > 0:
+    digit_sum = a % 10 + b % 10
+    carry = digit_sum // 10
+    if carry > 0:
+        has_carry = True
+        break
+    a /= 10
+    b /= 10
+
+if has_carry:
+    print("Yes")
+else:print("No")
+"""
+
