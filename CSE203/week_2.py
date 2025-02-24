@@ -77,3 +77,18 @@ for i in range(a, b+1):
     s += lst[i]
 print(s)
 """
+
+# N = int(input())
+# b = bin(N)
+# b = b.replace("0b", "")
+# print(b)
+
+start = 0
+end = 10
+step = 2
+for i in range(start, end, step):
+    start = 5
+    end = 50
+    step = 6
+    print(i,end="-")
+
