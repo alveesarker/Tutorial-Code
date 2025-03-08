@@ -24,3 +24,23 @@ for i in range(length):
 
 formatted_number = ''.join(result)
 print(formatted_number)
+
+
+
+# Closest pair
+import math
+
+N = int(input().strip())
+
+points = [tuple(map(int, input().split())) for _ in range(N)]
+
+min_distance = float('inf')
+
+for i in range(N):
+    for j in range(i + 1, N):
+        x1, y1 = points[i]
+        x2, y2 = points[j]
+        distance = math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)
+        min_distance = min(min_distance, distance)
+
+print(min_distance)
