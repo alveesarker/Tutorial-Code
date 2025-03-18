@@ -21,7 +21,7 @@ print(a - (b % a))
 
 
 # Maximum
-n = int(input())
+number = int(input())
 lst = map(int, input().split())
 print(max(lst))
 
