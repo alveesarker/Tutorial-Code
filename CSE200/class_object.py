@@ -12,8 +12,3 @@ class Student:
 s1 = Student("Riyad", "Hasan",  2238478, 2, "CSE")
 s2 = Student("Alvee", "Sarker", "2311249", 2, "CSE")
 
-# print(s1.id)
-# print(s1.l_name)
-s1.fullname()
-s2.fullname()
-
